@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Page </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+ 
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>mouthbook</h1>
+          <p>Connect with friends and the world </p>
+          <p> around you on Mouthbook.</p>
+        </div>
+        <form action="./welcome.html" class="form">
+          <input type="email" placeholder="Email or phone number" id="loginemail" required>
+          <input type="password" placeholder="Password" id="loginpassword" required>
+          <div class="link">
+            <button  onclick="loginFunc()" class="login">Login</button>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+          <hr>
+          <div class="button">
+            <a href="#" onclick="createAccount()">Create new account</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

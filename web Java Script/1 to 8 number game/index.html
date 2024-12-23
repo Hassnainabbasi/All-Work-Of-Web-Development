@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.Q Check</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+<div class="all">
+<div class="rule">
+    <h1 class="heading">Check I.Q</h1>
+     <h2>Put 1 to 8 numbers in this boxes <br> but each box number can't match</h2>
+     <h2>Horizontally,Vertically and crossly.</h2>
+</div>
+    <div class="container">
+        <div class="box"  id="box-3">3</div>
+            <div class="main">
+                <div class="box" style="position: relative;top: 5px;" id="box-1">1</div>
+                <div class="box" style="position: relative;top: 5px;" id="box-2">2</div>
+                <div class="box" id="box-4">4</div>
+                <div class="box" id="box-5">5</div>
+                <div class="box" style="position: relative;bottom: 5px;" id="box-7">7</div>
+                <div class="box" style="position: relative;bottom: 5px;" id="box-8">8</div>
+            </div>
+            <div class="box" style="margin-left: 15px;" id="box-6">6</div>
+        </div>
+        
+        <div class="btn">
+            <h1 id="win-lose"></h1>
+            <button id="restart-btn">Restart</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

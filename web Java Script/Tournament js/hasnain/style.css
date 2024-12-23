@@ -1,0 +1,40 @@
+.divs{
+    display: flex;
+    justify-content: space-around;
+  }
+  #butnone{
+    width: 55%;
+    position: relative;
+    left: 0px;
+    border-radius: 10px;
+    border: 2px solid Green;
+  }
+  #butntwo {
+    width: 55%;
+    position: relative;
+    left: 2px;
+    border-radius: 10px;
+    border: 2px solid Green;
+  }
+  .abc{
+   margin: 0px 0px 0px -60px;
+  }
+  .bef{
+     margin: 0px 0px 0px 0px;
+  }
+  .matched{
+    text-decoration: line-through;
+  }
+  body{
+    background-color: seagreen;
+    color: white;
+  }
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif
+  }
+  input{
+    width: 50%;
+    background-color: whitesmoke;
+    border: 2px solid green;
+    border-radius: 9px;
+  }

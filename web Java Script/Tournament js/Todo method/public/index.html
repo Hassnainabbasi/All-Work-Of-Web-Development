@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+
+        <div class="inpborder">
+            
+        <div class="under">
+            <input onfocus="this.style.background = 'black'" onblur="this.style.background = 'white'"  type="text" name="" id="team1"  placeholder="Enter Group A Team Name">
+            <button onclick="submit1()" class="btn" id="btn1">submit</button>
+        </div>
+        <div class="under">
+            <input type="text" name="" id="team2" placeholder="Enter Group B Team Name" onfocus="this.style.background = 'black'" onblur="this.style.background = 'white'">
+            <button onclick="submit2()" class="btn" id="btn2">submit</button>
+        </div>
+        
+    </div>
+<div class="group">
+    <div><h1 class="grp">Group A</h1>
+       <ol id="ol1">
+
+       </ol>
+        
+    </div>
+    <div><h1 class="grp">Group B</h1>
+        <ol id="ol2">
+
+        </ol>
+    </div>
+</div>
+
+<div class="end">
+    <h1 id="plr1">Team A</h1>
+    <h1>VS</h1>
+    <h1 id="plr2">Team B</h1>
+        <button onclick="match()" id="match" class="match">Match</button>
+        <button onclick="reset()" class="reset">Reset</button>
+    </div>
+</div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

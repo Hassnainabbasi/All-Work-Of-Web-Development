@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+
+
+}
+
+#tryagain {
+
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    background: linear-gradient(black, blue);
+    box-shadow: 4px 4px 8px black;
+
+}
+
+#tryagain:hover {
+    transform: scale(1.05);
+    transition: .5s;
+    color: green;
+}
+
+.main {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+
+}
+
+h1 {
+    font-size: 60px;
+
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#qt {
+    font-size: 25px;
+}
+
+.center {
+    font-size: 20px;
+
+}
+
+#btn {
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px black;
+    border: none;
+    background: linear-gradient(black, blue);
+    color: white;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+}
+
+#btn:hover {
+    transform: scale(1.05);
+    transition: .5s;
+    color: green;
+}
+
+.inner {
+    margin: 10px;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(30deg, blue, black);
+    text-shadow: 2px 2px 5px black;
+    color: white
+}
+
+.startbtn {
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px black;
+    border: none;
+    background: linear-gradient(black, blue);
+    color: white;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.startbtn:hover {
+    transform: scale(1.05);
+    transition: .5s;
+    color: green;
+}
+
+.all {
+
+    background: linear-gradient(30deg, blue, black);
+
+}
+
+.start {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 3px 3px 6px black;
+    color: white;
+
+}
+
+.gap {
+    word-spacing: 5px;
+    line-height: 80px;
+}
+
+#result {
+    display: none;
+}
+
+
+@media screen and (max-width : 700px) {
+
+    .main {
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #qt {
+        font-size: 17px;
+    }
+
+    .inner {
+        margin: 3px;
+    }
+
+    span {
+        height: 90vh;
+    }
+
+    #img {
+        width: 300px;
+    }
+}

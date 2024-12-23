@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(30deg, black, grey, red);
+}
+
+
+#hours,
+#minutes,
+#seconds {
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+    font-weight: bolder;
+}
+
+.count{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    
+}
+
+.btn1 {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 40px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(30deg, black, grey, red);
+    box-shadow: 3px 3px 6px black;
+
+}
+
+.btn1:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.btn2 {
+    width: 80px;
+    margin: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    background: linear-gradient(30deg, black, grey);
+    box-shadow: 3px 3px 6px black;
+}
+
+.btn2:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    font-size: 40px;
+}
+
+#clock{
+    margin-bottom: 60px;
+    font-size: 50px;
+}

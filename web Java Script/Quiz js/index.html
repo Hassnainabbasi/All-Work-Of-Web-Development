@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="all">
+
+        <div class="start" id="start1">
+            <h1>Quiz Competetion</h1>
+            <h2 class="gap">Jeetne k liye 10 me se 9 questions ka right hona
+                <br>zarori ha har ek sawal ka time 10 seconds
+                <br>hoga jawab nh diya to auto pe next question
+                <br>ajaega "Best of luck" press Start button
+            </h2>
+            <button class="startbtn" onclick="startQz()">Start</button>
+        </div>
+
+        <div class="main" id="main1">
+
+            <h1>Quiz Competetion</h1>
+            <h2>Jeetne k liye 9 questions ka right hona zarori ha</h2>
+            <h2 id="timer"></h2>
+
+            <p id="qt">
+
+            </p>
+            <div class="center">
+                <div class="inner">
+
+                    <input onclick="clicked()" type="radio" value="1" name="quiz" id="select1">
+                    <label for="select1" id="op1"></label>
+                </div>
+
+                <div class="inner">
+
+                    <input onclick="clicked()" type="radio" value="2" name="quiz" id="select2">
+                    <label for="select2" id="op2"></label>
+                </div>
+
+                <div class="inner">
+
+                    <input onclick="clicked()" type="radio" value="3" name="quiz" id="select3">
+                    <label for="select3" id="op3"></label>
+                </div>
+
+                <div class="inner">
+
+                    <input onclick="clicked()" type="radio" value="4" name="quiz" id="select4">
+                    <label for="select4" id="op4"></label>
+                </div>
+            </div>
+            <div>
+                <button onclick="next()" disabled id="btn">Next</button>
+            </div>
+
+
+        </div>
+    </div>
+    <span id="result">
+
+        <img src="" alt="" id="img">
+        <h1 id="points"></h1>
+        <button onclick="tryAgain()" id="tryagain">Try Again</button>
+
+    </span>
+    <script src="app.js"></script>
+</body>
+
+</html>

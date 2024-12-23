@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+
+        <div class="inpborder">
+            
+        <div class="under">
+            <input onfocus="this.style.background = 'red'" onblur="this.style.background = 'white'"  type="text" name="" id="team1"  placeholder="Enter Group A Team Name">
+            <button onclick="submit1()" class="btn" id="btn1">submit</button>
+        </div>
+        <div class="under">
+            <input type="text" name="" id="team2" placeholder="Enter Group B Team Name" onfocus="this.style.background = 'green'" onblur="this.style.background = 'white'">
+            <button onclick="submit2()" class="btn" id="btn2">submit</button>
+        </div>
+        
+    </div>
+<div class="group">
+    <div><h1 class="grp">Group A</h1>
+        <p id="slod1" class="text"></p>
+        <p id="slod2" class="text"></p>
+        <p id="slod3" class="text"></p>
+        <p id="slod4" class="text"></p>
+        <p id="slod5" class="text"></p>
+        
+    </div>
+    <div><h1 class="grp">Group B</h1>
+        <p id="slod6" class="text"></p>
+        <p id="slod7" class="text"></p>
+    <p id="slod8" class="text"></p>
+    <p id="slod9" class="text"></p>
+    <p id="slod10" class="text"></p>
+    </div>
+</div>
+
+<div class="end">
+    <h1 id="plr1">Team 1</h1>
+    <h1>VS</h1>
+    <h1 id="plr2">Team 2</h1>
+        <button onclick="match()" class="match">Match</button>
+    </div>
+</div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

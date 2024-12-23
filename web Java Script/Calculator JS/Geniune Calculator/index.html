@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator - By Code Traversal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="dt"><span id="date"></span><span id="time"></span></div>
+        <input readonly type="text" id="inputBox" placeholder="0" />
+        <div>
+          <button class="button operator" onclick="clr()">AC</button>
+          <button class="button operator" onclick="del()">DEL</button>
+          <button class="button operator" onclick="change('%')">%</button>
+          <button class="button operator" onclick="change('/')">/</button>
+        </div>
+        <div>
+          <button class="button" onclick="change(7)">7</button>
+          <button class="button" onclick="change(8)">8</button>
+          <button class="button" onclick="change(9)">9</button>
+          <button class="button operator" onclick="change('*')">*</button>
+        </div>
+        <div>
+          <button class="button" onclick="change(4)">4</button>
+          <button class="button" onclick="change(5)">5</button>
+          <button class="button" onclick="change(6)">6</button>
+          <button class="button operator" onclick="change('-')">-</button>
+        </div>
+        <div>
+          <button class="button" onclick="change(1)">1</button>
+          <button class="button" onclick="change(2)">2</button>
+          <button class="button" onclick="change(3)">3</button>
+          <button class="button operator" onclick="change('+')">+</button>
+        </div>
+
+        <div>
+          <button class="button" onclick="change('00')">00</button>
+          <button class="button" onclick="change(0)">0</button>
+          <button class="button" onclick="change('.')">.</button>
+          <button class="button equalBtn" onclick="equal()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+    <script src="app.js"></script>
+</body>
+</html> 
+

@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    
+}
+
+.box{
+    background-color: black;
+    background-image: url(./deadline.gif);
+    background-repeat: no-repeat;
+    background-position: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.details{
+    margin: 50px;
+    
+}
+
+.heading{
+    font-size: 100px;
+    text-align: center;
+    background-image: linear-gradient(black, red);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media screen and (max-width : 700px) {
+    
+.heading{
+    font-size: 70px;
+
+}
+
+.details{
+    font-size: 35px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box{
+    overflow-x: hidden;
+    background-position: center center;
+    background-size: 500px;
+}
+
+.body{
+    overflow: auto;
+}
+
+}

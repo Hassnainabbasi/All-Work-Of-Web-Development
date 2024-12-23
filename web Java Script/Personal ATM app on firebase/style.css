@@ -1,0 +1,388 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main-container {
+    display: none;
+}
+
+.background-set{
+    background-image: url(images/background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;   
+}
+
+.position-set{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.auth-container {
+    background-image: url(images/background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+.join {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#sign-out-btn {
+    border: 1px solid white;
+    box-shadow: 2px 2px 4px black;
+    background: transparent;
+    color: white;
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+    padding: 3px;
+    border-radius: 3px;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#user-name {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+}
+
+#sign-out-btn:hover {
+    color: red;
+    transform: rotateX(20deg);
+}
+
+.results {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.box {
+    border: 1px solid white;
+    padding: 5px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 4px black;
+}
+
+#income {
+    color: green;
+}
+
+#expense {
+    color: red;
+}
+
+#balance {
+    color: blue;
+}
+
+#type {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    padding: 2px;
+    font-size: 20px;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    box-shadow: 2px 2px 4px black;
+    cursor: pointer;
+}
+
+#amount,
+#description {
+    padding: 5px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: none;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 5px;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 3px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+#container-box {
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+    width: 350px;
+    /* border : 2px solid black */
+}
+
+.sign-in {
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 455px;
+}
+
+.sign-out {
+    transition: all 1s ease;
+    display: flex;
+    height: 450px;
+    width: 300px;
+    flex-direction: column;
+    border: 2px solid white;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+
+#signin-email,
+#signin-password,
+#signup-name,
+#signup-email,
+#signup-password {
+    height: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    box-shadow: 3px 3px 5px black;
+    background: transparent;
+    border-bottom: 2px solid black;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+}
+
+#login-btn {
+    height: 30px;
+    font-size: 20px;
+    width: 100px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    color: blue;
+    transform: rotateY(20deg);
+}
+
+#signup-btn {
+    height: 30px;
+    font-size: 20px;
+    width: 100px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 3px 3px 5px black;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#signup-btn:hover {
+    color: green;
+    transform: rotateY(20deg);
+}
+
+#login-google-btn {
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: blue;
+    box-shadow: 3px 3px 5px black;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#login-google-btn:hover {
+    transform: rotateX(20deg);
+}
+
+#login-google-btn>img {
+    width: 50px;
+}
+
+#submit,
+#clear {
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    box-shadow: 2px 2px 4px black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#submit:hover {
+    color: blue;
+    transform: rotateX(20deg);
+    cursor: pointer;
+}
+
+#clear:hover {
+    color: red;
+    transform: rotateX(20deg);
+    cursor: pointer;
+}
+
+.delete-btn {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 4px black;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+    color: red;
+    box-shadow: 2px 2px 4px black;
+}
+
+.delete-btn:hover{
+    transform: rotateY(20deg);
+}
+
+#submit-spinner{
+    width: 20px;
+    display: none;
+}
+
+#clear-spinner{
+    width: 20px;
+display: none;
+}
+
+#states-spinner{
+    margin: auto;
+    margin-top: 50px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

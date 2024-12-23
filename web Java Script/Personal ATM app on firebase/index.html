@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal ATM App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- AUTHENTICATION PAGE -->
+    <div class="auth-container">
+        <h1 style="text-shadow: 1px 1px 3px white;">Record! <span id="index-heading" ></span> </h1>
+
+        <div id="container-box">
+
+            <div class="slider">
+                <div class="sign-in">
+                    <h1>Login</h1>
+                    <div class="inp">
+                        <label for="">E-mail</label>
+                        <input type="email" name="" required placeholder="E-mail Address" id="signin-email">
+
+                    </div>
+                    <div class="inp">
+                        <label for="">Password</label>
+                        <input type="password" name="" required id="signin-password" placeholder="Password">
+                    </div>
+                    <div class="btns">
+                        <button id="login-btn">Login</button>
+                        <button id="login-google-btn"><img src="images/google-logo.png" alt="">Login with
+                            Google</button>
+                    </div>
+                    <p>Don't have an account ? <a href="#" onclick="signupBox()">Register</a></p>
+                </div>
+
+                <div class="sign-out">
+                    <h1>Create an account</h1>
+                    <div class="inp">
+                        <label for="">Name</label>
+                        <input type="text" name="" required placeholder="Name" id="signup-name">
+
+                    </div>
+                    <div class="inp">
+                        <label for="">E-mail</label>
+                        <input type="email" name="" required placeholder="E-mail Address" id="signup-email">
+
+                    </div>
+                    <div class="inp">
+                        <label for="">Password</label>
+                        <input type="password" required name="" id="signup-password" placeholder="Password">
+                    </div>
+                    <div class="btns">
+                        <button id="signup-btn">Create</button>
+                    </div>
+                    <p>Already have an account ? <a href="#" onclick="loginBox()">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- STATES PAGE -->
+
+
+    <div class="main-container">
+        <div class="background-set"></div>
+        <div class="position-set">
+
+            <h3 id="user-name">Welcome! <span id="dynamic-name"></span></h3>
+            <div class="header">
+                <button id="sign-out-btn">Sign Out</button>
+            </div>
+
+            <div class="results">
+                <div class="box">Total Income <div id="income">0</div>
+                </div>
+                <div class="box">Total Expense <div id="expense">0</div>
+                </div>
+                <div class="box">Total Balance <div id="balance">0</div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="inp">
+                    <label for="">Amount</label>
+                    <input type="number" placeholder="Enter Your Amount" id="amount">
+                </div>
+                <div class="inp">
+                    <label for="">Description</label>
+                    <input type="text" placeholder="Enter Your Description" id="description">
+                </div>
+                <div style="gap: 10px; display: flex; margin-top: 10px;">
+                    <select name="" id="type" onchange="typeColor()">
+                        <option value="Income">Income</option>
+                        <option value="Expense">Expense</option>
+                    </select>
+                    <button  id="submit"><img src="images/loader.webp" alt="" id="submit-spinner" > Submit</button>
+                    <button id="clear"><img src="images/loader.webp" alt="" id="clear-spinner" >Clear All</button>
+                </div>
+            </div>
+
+            <div id="table">
+                <table
+                    style="border-collapse: collapse; border: 1px solid white; padding: 5px; background: transparent; backdrop-filter: blur(10px);">
+                    <tr>
+                        <th>Serial</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th>record</th>
+                    </tr>
+                    <tbody id="states">
+                        
+                        
+                    </tbody>
+                    
+                </table>
+            </div>
+            <img src="images/loader.webp" id="states-spinner" width="100px" alt="">
+
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" ></script>
+</body>
+
+</html>

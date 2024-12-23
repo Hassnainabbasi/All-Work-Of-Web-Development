@@ -1,0 +1,274 @@
+.text{
+    font-size: 30px !important;
+    color: rgb(255, 255, 255) !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.color{
+background-color: rgb(0, 0, 0) !important; 
+height:70px !important;
+margin-top:-10px;}
+.dot{
+    color: rgb(235, 0, 0);
+    font-size:40px;
+}
+.slid{
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+}
+.img{
+    width: 100%;
+    height:500px !important;
+    object-fit: cover;
+}
+.pop{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(0, 0, 0);
+}
+.potext{
+    background-color: rgb(0, 0, 0);
+    margin-left: 13px;
+    height: 100%;
+align-items: center;
+display: flex;}
+.poular{
+    font-size: 30px !important;
+    color: rgb(255, 255, 255) !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    
+}
+.main{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+
+}
+.maintwo{
+    width: 98%;
+    background-color: rgb(0, 0, 0);
+    margin-left: 13px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.card1{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(255, 254, 255);
+    border-radius: 10px;
+    }
+.image{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    height: 45%;
+    background-color: white;
+}
+.imge{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+body{
+    background-color: black !important;
+}
+.imge{
+    height:150px;
+    object-fit: contain;
+}
+
+
+.parnnt{
+    width: 100%;
+    height: 120%;
+    background-color: rgb(107, 75, 75);
+    display: flex;
+    
+}
+.left{
+    width: 50% !important;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.right{
+        width: 50% !important;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+}
+
+.para{
+    color: black;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-left: 7px;
+}
+.card1:hover {
+    transform:scale(1.02) translateY(-5px); /* Lift the card up */
+    transition: transform 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.inpMain{
+    width: 100%;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.oter{
+    height:85% ;
+    background-color: black;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255) ;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.452);
+    margin-top: 80px;
+}
+
+.textCar{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 18%;
+    border-radius: 10px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.selectcar{
+font-size:24px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: white;
+font-weight: 700;
+}
+.sel{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    background-color:rgb(0, 0, 0);
+    border: 2px dotted rgb(255, 243, 243) ;
+    color: white;
+}
+.sel:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.bttn{
+    width: 20%;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.mainlastt{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content:center ;
+    margin-top: 35px;
+}
+@media only screen and (max-width:500px){
+
+
+    .img{
+        width: 100%;
+        height:300px !important;
+        object-fit: cover;
+    }
+    .text{
+        font-size: 25px !important;
+        color: rgb(255, 255, 255) !important;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+    }
+    
+.poular{
+    font-size: 23px !important;
+    color: rgb(255, 255, 255) !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.color{
+    background-color: rgb(0, 0, 0) !important; 
+    height:70px !important;
+    margin-top:-25px;}
+    
+.maintwo{
+    width: 98%;
+    background-color: rgb(0, 0, 0);
+    margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1{
+    width: 75%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.oter{
+    height:85% ;
+    width:77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    border: px solid rgb(255, 255, 255) ;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.452);
+    margin-top: 80px;
+}
+
+.textCar{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 18%;
+    border-radius: 0px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.bttn{
+    width: 30%;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.sel{
+    font-weight: 600;
+    font-size: 16px;
+    height: 30px;
+}
+}
+
+@media only screen and (min-width:1000px){
+.jscard{
+    width: 50%;
+}
+.jsimagedive{
+    height: 250px;
+    background-color: rgba(180, 180, 180, 0.336);
+}
+
+.jsimage{
+    height:300px;
+    object-fit: contain;
+}
+.jspara{
+    font-size: 20px;
+}
+}

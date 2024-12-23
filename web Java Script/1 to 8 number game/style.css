@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(27, 27, 82);
+    color: yellow;
+    text-shadow: 3px 3px 5px  black;
+}
+.main{
+    width: 200px;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 3px 3px 5px black; */
+}
+
+.container{
+    display: flex;
+  align-items: center;
+  font-family: 'Lobster';
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+.btn{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+
+#restart-btn{
+    width: 120px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    background-color: rgb(255, 255, 8);
+border: none;
+border-radius: 5px;
+font-family: 'Lobster';
+font-weight: 500;
+font-style: normal;
+box-shadow: 3px 3px 5px black;
+
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.rule{
+    text-align: center;
+}
+
+.heading{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+#win-lose{
+    font-family: 'Lobster';
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@media screen and (max-width : 450px){
+    .box{
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .all{
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        justify-content: center;
+        gap: 40px;
+    }
+    #box-1,#box-4,#box-7{
+        position: relative;
+        left: 25px;
+    }
+    #box-3{
+        position: relative;
+        left: 30px;
+    }
+    #box-6{
+        position: relative;
+        right: 40px;
+    }
+}

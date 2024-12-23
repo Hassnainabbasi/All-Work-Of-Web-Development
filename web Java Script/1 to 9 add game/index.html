@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 to 9 add game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Fill all boxes with 1 to 9 digits <br>Addition of horizontally,vertically <br>and crossly is equal to 15 </h1>
+    </div>
+
+    <div class="main">
+
+        <div class="board">
+
+            <div class="boxes">
+
+                <div class="box1 box">1</div>
+                <div class="box2 box">2</div>
+                <div class="box3 box">3</div>
+                <div class="box4 box">4</div>
+                <div class="box5 box">5</div>
+                <div class="box6 box">6</div>
+                <div class="box7 box">7</div>
+                <div class="box8 box">8</div>
+                <div class="box9 box">9</div>
+            </div>
+            <div id="right-sum">
+                <span id="right-1" class="clear">00</span>
+                <span id="right-2" class="clear">00</span>
+                <span id="right-3" class="clear">00</span>
+                <span id="corner-1" class="clear">00</span>
+            </div>
+        </div>
+        <div id="bottom-sum">
+            <span id="corner-2" class="clear">00</span>
+            <span id="bottom-1" class="clear">00</span>
+            <span id="bottom-2" class="clear">00</span>
+            <span id="bottom-3" class="clear">00</span>
+        </div>
+        <div id="result">
+
+        </div>
+        <div class="btns">
+            <button onclick="winCheck()" class="check-btn">Check</button>
+            <button onclick="restart()" class="restart-btn">Restart</button>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="video-main">
+            <video class="bg-video" src="fruits-video.mp4" autoplay loop muted plays-inline></video>
+
+        </div>
+
+
+        <div class="sign-in">
+            <h1 class="heading">Sign in</h1>
+            <div class="input">
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="" id="e-mail" required>
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" name="" id="password" required>
+
+            </div>
+            <div class="sign-in-btns">
+                <button id="sign-in-btn">Sign in</button>
+                <button id="login-google-btn"><img src="google-logo.png" alt="" width="60px"> Login with Google</button>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="logo.jpeg" alt="">
+
+            <div class="number-container">
+                <h1 class="heading-number">Login with Number</h1>
+                <div class="input-number">
+                    <label for="number">Phone Number</label>
+                    <input type="number" name="" id="number" required>
+                </div>
+                <button id="number-submit-btn">Submit</button>
+                <div class="input-number" id="otp-show" style="display: none;">
+                    <label for="otp">OTP Number</label>
+                    <input type="number" name="" id="otp" required>
+                    <button id="otpBtn">OTP Verification</button>
+
+                </div>
+               
+                <div id="recaptcha">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="sign-up">
+        <h1 class="heading">Sign up</h1>
+        <div class="input">
+            <label for="up-username">Username</label>
+            <input type="text" name="" id="up-username" required>
+        </div>
+        <div class="input">
+            <label for="up-e-mail">E-mail</label>
+            <input type="email" name="" id="up-e-mail" required>
+        </div>
+        <div class="input">
+            <label for="up-password">Password</label>
+            <input type="password" name="" id="up-password" required>
+            
+        </div>
+        <div>
+            <button id="sign-up-btn">Sign up</button>
+        </div>
+    </div>
+    
+</div>
+</div>
+
+<script type="module" src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

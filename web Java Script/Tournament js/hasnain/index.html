@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<div class="divs">
+  <input placeholder=" Enter Group A Team " type="text" id="inps">
+  <input placeholder=" Enter Grou B Team" type="text" id="inpes">
+</div>
+<div class="divs">
+ <button onclick="one()" id="butnone" type="submit">Submit</button>
+<button onclick="two()" id="butntwo" type="submit">Submit</button>
+</div>
+<br><br><br>
+<div class="divs">
+  <h1><i>Group A</i></h1>
+  <h1><i>Group B</i></h1>
+</div>
+<div class="divs">
+<ul id="uls"></ul>
+<ul id="ules"></ul>
+</div>
+
+<br><br>
+<div class="centerwali">
+    <center><h2 id="pehliTeam">Team 1</h2></center>
+  <center><h2>Vs</h2></center>
+  <center><h2 id="dusriTeam">Team 2</h2></center>
+<center><button onclick="matchTeams()" id="matchButtons" type="submit" >Match</button></center>
+</div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
