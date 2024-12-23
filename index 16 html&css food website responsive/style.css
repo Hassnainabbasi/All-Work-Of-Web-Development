@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0
+    ;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    
+}
+.upper{
+    background-image: url(HD-wallpaper-food-dessert-still-life.jpg);
+background-size:cover;
+background-position: 100% 100%;
+height: 900px;
+background-repeat: no-repeat;
+position: relative;
+
+}
+.bar{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+.nav-1{
+    
+    color: black;
+    padding: 10px;
+ font-weight: bold;   
+    text-shadow: 1px 1px 2px black;
+}
+.options{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    border-radius: 10px;
+}
+.ph{
+    position: relative;
+    left: 100px;
+}
+.heading{
+    color:white;
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+text-shadow: 5px 5px 10px black;    
+}
+.col-1{
+    background-image: url(side.webp);
+    width: 28%;
+    height: 600px;
+    color: white;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    /* background-position: 100%; */
+    /* background-size:max(800px, 80vw); */
+    background-size: cover;
+    background-position: center center;
+}
+.side{
+    font-size: 30px;
+    line-height: 0.5;
+padding-top: 100px;
+text-align: center;
+}
+.col-2{
+    width: 400px;
+    display: inline-block;
+    margin: 20px 20px;
+    background-color: rgb(255, 217, 203);
+height: 290px;
+border-radius: 10px;
+}
+.col-3{
+    width: 400px;
+    display: inline-block;
+    background-color: rgb(255, 217, 203);
+height: 290px;
+border-radius: 10px;
+}
+.col-4{
+    width: 400px;
+    display: inline-block;
+    margin: 2px 20px;
+    background-color: rgb(255, 217, 203);
+height: 290px;
+border-radius: 10px;
+}
+.col-5{
+    width: 400px;
+    display: inline-block;
+    background-color: rgb(255, 217, 203);
+height: 290px;
+border-radius: 10px;
+}
+.end{
+    position: relative;
+    left: 10px;
+
+}
+.right{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    position: relative;
+    bottom: 5px;
+    box-shadow: 2px 2px 3px black;
+}
+.title{
+    padding-left: 27px;padding-top: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;
+}
+
+
+.fa-star{
+    color:wheat;
+    text-shadow: 1px 1px 2px black;
+}
+#star{
+    color: orangered;
+}
+.bounce{
+    animation: bouncing 0.6s ease 0s infinite alternate both;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 50px;
+    position: relative;
+left: 50px;
+}
+@keyframes bouncing{
+    0% {
+        left:0;
+        box-shadow: 0 0 5px rgb(0, 0, 0.5);
+    }
+    100%{
+        left:120px ;
+        box-shadow: 0 50px 50px rgb(0, 0, 0.1);
+    }
+}
+.nav-1:hover{
+    color: blue;
+    cursor: pointer;
+}
+button:hover{
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+   .bar{
+    display:flex;
+   }
+   .bounce{
+    display: none;
+   }
+   .options{
+    display: none;
+   }
+   /* .end{
+    width: 50%;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   } */
+   .col-2{
+    width: 300px;
+    height: 200px;
+   }
+   .col-3{
+    width: 300px;
+    height: 200px;
+   }
+   .col-4{
+    width: 300px;
+    height: 200px;
+   }
+   .col-5{
+    width: 300px;
+    height: 200px;
+   }
+}

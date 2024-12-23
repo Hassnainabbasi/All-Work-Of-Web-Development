@@ -1,0 +1,16 @@
+li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 10px;
+    
+
+}
+div{
+    background-color: #b6c4c2;
+    position: fixed;
+    margin: auto;
+    width: 100%;
+}
+li:hover{
+    color: blue;
+}

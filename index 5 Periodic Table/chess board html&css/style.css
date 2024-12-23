@@ -1,0 +1,170 @@
+body{
+    background-color:orangered;
+}
+.black{
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    background-color: black;
+}
+.white{
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    background-color: wheat;
+}
+.row-1{
+    display: flex;
+    justify-content: center;
+}
+.abc{
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+    margin-left: 400px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.number{
+    margin-top: 25px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#piece{
+    width: 75px;
+    height: 75px;
+}
+.bounce-w1{
+    animation: bouncing-w1 2s ease 0s  alternate both;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+@keyframes bouncging-w1{
+    0% {
+        bottom:0;
+    
+    }
+    100%{
+        bottom:160px ;
+        
+    }}
+    .bounce-w2{
+        animation: bouncing-w2 3s ease 4s  alternate both;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+    }
+    @keyframes bouncing-w2{
+        0% {
+            bottom:0;
+        
+        }
+        100%{
+            bottom:230px ;
+           margin-left: 232px; 
+            
+        }}
+    .bounce-w3{
+        animation: bouncing-w3 3s ease 10s  alternate both;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        
+    
+    }
+    .bounce-w3:hover{
+      
+      position: absolute;
+      left: 685px;
+      top: 120px;
+      
+    }
+    @keyframes bouncing-w3{
+        0% {
+            bottom:0;
+        
+        }
+        100%{
+            bottom:155px ;
+            margin-left: -155px;
+            
+            
+        }}
+        .bounce-b1{
+            animation: bouncing-b1 3s ease 2s  alternate both;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+        }
+        @keyframes bouncing-b1{
+            0% {
+                top:0;
+            
+            }
+            100%{
+                top:150px ;
+                
+                
+            }}
+        .bounce-b2{
+            animation: bouncing-b2 3s ease 12s  alternate both;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+        }
+        @keyframes bouncing-b2{
+            0% {
+                top:0;
+            
+            }
+            100%{
+                top:150px ;
+                margin-left: 76px;
+                
+                
+            }}
+        .bounce-b3{
+            animation: bouncing-b3 3s ease 8s  alternate both;
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+        }
+        @keyframes bouncing-b3{
+            0% {
+                top:0;
+            
+            }
+            100%{
+                top:230px ;
+                margin-left: 230px;
+                
+                
+            }}
+            h1{
+              
+                font-size: 90px;
+                font-family: 'Great Vibes';
+                text-shadow: 2px 2px 6px white;
+                
+
+            }
+            .bounce-h{
+                position: absolute;
+                left: 550px;
+                top: 230px;
+                animation: bouncing-h 3s ease 16s  alternate both;
+                cursor: pointer;
+                
+            }
+            @keyframes bouncing-h{
+                0% {
+                    left:0;
+                
+                }
+                100%{
+                    left:550px ;
+                
+                }}
+              

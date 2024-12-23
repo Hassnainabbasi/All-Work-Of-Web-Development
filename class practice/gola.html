@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gola{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        transition: width 2s, height 4s, border-radius 4s, background-color 4s, font-size 4s, color 4s,line-height 4s, margin-left 8s;
+        
+        
+        text-align: center;
+        font-size: 5px;
+        line-height: 100px;
+        
+        
+    }
+    .gola:hover{
+width: 600px;
+height: 630px;
+border-radius: 50%;
+background-color: blue;
+color: bisque;
+font-size: 100px;
+line-height: 200px;
+margin-left: 350px;
+}
+.bounce{
+    animation: bouncing 0.5s ease 0s infinite alternate both;
+    background: darkblue;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    padding: 1em 2em 1.1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: 300px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+}
+*{
+    background-color: lightblue;
+}
+@keyframes bouncing{
+    0% {
+        bottom:0;
+        box-shadow: 0 0 5px rgb(0, 0, 0.5);
+    }
+    100%{
+        bottom:100px ;
+        box-shadow: 0 50px 50px rgb(0, 0, 0.1);
+    }
+}
+</style>
+<body>
+   <div class="gola">SAYLANI ZINDABAD</div>
+   <div class="bounce">THANKS FOR BEST TEACHING <br> SIR SAAD</div>
+
+</body>
+</html>
