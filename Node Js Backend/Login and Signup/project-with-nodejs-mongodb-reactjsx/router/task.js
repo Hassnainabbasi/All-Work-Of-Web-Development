@@ -2,27 +2,44 @@ import express from 'express'
 import AllTaskModal from '../lib/model/AllTaskModal.js'
 import cors from 'cors'
 import AllUserModal from '../lib/model/AllUserModal.js'
+import jwt from 'jsonwebtoken'
 const router = express.Router()
+
 
 router.use(express.json())
 router.use(cors())
 
 router.get("/", async(req , res)=>{
     try {
-        const checkTask = await AllTaskModal.find().lean()
-        res.status("200").json({
+      const bearerToken = req.headers.authorization
+      if(!bearerToken){
+        return res.status().json({
+          error : true,
+          data : null,
+          msg : "Token Not Provide"
+        })
+      }
+      let token = bearerToken.split(" ")[1]
+      let decoded = jwt.verify(token , "shhhhh")
+      let userId = decoded.id
+
+      const checkTask = await AllTaskModal.find({userId : userId}).lean()
+      res.status("200").json({
             error : false,
             data : checkTask,
             msg : "Task Fetch Sucessfully"
          })
     } catch (error) {
-        console.log(e)
+        console.log(error)
+        res.status(500).json({
+          error: true,
+          msg: "Internal Server Error",
+      });
     }
 })
-
-
-router.post("/", express.json(),async(req , res)=>{
+router.post("/",async(req , res)=>{
     const {task} = req.body
+    console.log("tasks=>",{task})
     const bearerToken = req.headers.authorization;
     if (!bearerToken) {
       return res.status(403).json({
@@ -35,7 +52,6 @@ router.post("/", express.json(),async(req , res)=>{
     try {
         const decoded = jwt.verify(token, 'shhhhh');
         const userId = decoded.id;
-        const userEmail = decoded.email;
     
         const user = await AllUserModal.findById(userId);
         if (!user) {
@@ -47,7 +63,8 @@ router.post("/", express.json(),async(req , res)=>{
         const newTask = new AllTaskModal({
            task : task,
            userId : user._id,
-           email : user.email
+           email : user.email,
+           name : user.username
            })
           await newTask.save()   
           res.status("201").json({

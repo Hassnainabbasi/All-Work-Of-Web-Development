@@ -46,6 +46,8 @@ app.get('/',middleware,(req , res) =>{
  res.status(201).send(task)   
 })
 
+app.listen(PORT, () => console.log("Server is running " + PORT))
+
 // app.post('/',middleware, express.json(),(req , res)=>{
 //    console.log("req=>",req.body)
 // })
@@ -57,5 +59,3 @@ app.get('/',middleware,(req , res) =>{
 // app.delete('/',(req , res)=>{
 //     res.send("delete request Add")
 // })
-
-app.listen(PORT, () => console.log("Server is running " + PORT))
