@@ -10,30 +10,70 @@ export default function Dashboard() {
     console.log(tasks)
   })
 
-  const handleSubmit = async(e) =>{
-  e.preventDefault()
+//   const handleSubmit = async(e) =>{
+//   e.preventDefault()
 
-  if(!newtask.trim()) return;
+//   if(!newtask.trim()) return;
 
-  const newTaskObj = { task : newtask}
+//   const newTaskObj = { task : newtask}
 
-  setTasks([...tasks , newTaskObj])
-  setNewTask('')
+//   setTasks([...tasks , newTaskObj])
+//   setNewTask('')
 
-  const newUserTask = {tasks , newtask}
+//   const newUserTask = {tasks , newtask}
+//   try {
+//   let response = await fetch("http://localhost:3000/task",{
+//     method : "POST",
+//     headers: {
+//       'Content-Type': 'application/json',
+//   },
+//   body : JSON.stringify(newUserTask)
+//   })
+//   let data = await response.json() 
+//   } catch (error) {
+//     console.log(error)
+//   } 
+// }
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (!newtask.trim()) return; 
+
+  const newTaskObj = { task: newtask };
+
+  setTasks([...tasks, newTaskObj]);
+  setNewTask(""); 
+
+  const token = localStorage.getItem("token");
+
+  if (!token) {
+    alert("Please login first!");
+    return;
+  }
+
+  const newUserTask = { task: newtask };
+
   try {
-  let response = await fetch("http://localhost:3000/task",{
-    method : "POST",
-    headers: {
-      'Content-Type': 'application/json',
-  },
-  body : JSON.stringify(newUserTask)
-  })
-  let data = await response.json() 
+    let response = await fetch("http://localhost:3000/task", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify(newUserTask),
+    });
+
+    let data = await response.json();
+    if (data.error) {
+      console.log(data.msg);  
+    } else {
+      console.log("Task added successfully", data); 
+    }
+
   } catch (error) {
-    console.log(error)
-  } 
-}
+    console.log("Error:", error);
+  }
+};
 
 
     return (

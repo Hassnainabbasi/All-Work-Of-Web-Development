@@ -1,6 +1,7 @@
 import express from 'express'
 import AllTaskModal from '../lib/model/AllTaskModal.js'
 import cors from 'cors'
+import AllUserModal from '../lib/model/AllUserModal.js'
 const router = express.Router()
 
 router.use(express.json())
@@ -21,12 +22,32 @@ router.get("/", async(req , res)=>{
 
 
 router.post("/", express.json(),async(req , res)=>{
-    const {task } = req.body
-      try {
+    const {task} = req.body
+    const bearerToken = req.headers.authorization;
+    if (!bearerToken) {
+      return res.status(403).json({
+        error: true,
+        msg: "Token is required",
+      });
+    }
+  
+    const token = bearerToken.split(" ")[1];   
+    try {
+        const decoded = jwt.verify(token, 'shhhhh');
+        const userId = decoded.id;
+        const userEmail = decoded.email;
+    
+        const user = await AllUserModal.findById(userId);
+        if (!user) {
+          return res.status(404).json({
+            error: true,
+            msg: "User not found",
+          });
+        }
         const newTask = new AllTaskModal({
            task : task,
-           userId : userId,
-           email : email
+           userId : user._id,
+           email : user.email
            })
           await newTask.save()   
           res.status("201").json({

@@ -23,6 +23,8 @@ export default function Login() {
           console.log(data);
     
           if (data && !data.error) {
+          localStorage.setItem("token", data.data.token);
+            console.log("token=>",data.data.token)
             navigate('/');
             setUser(data)
           } else {
