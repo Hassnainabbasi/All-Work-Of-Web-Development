@@ -13,7 +13,7 @@ export default function Signup() {
     const userRegisterdata = {username , email,password}
 
     try {
-        let response = await fetch('http://localhost:3000/auth/register',{
+        let response = await fetch('https://api-l2lowp11l-hassnains-projects-2fb55efa.vercel.app/api',{
             method : "POST",
              headers: {
                 'Content-Type': 'application/json',
