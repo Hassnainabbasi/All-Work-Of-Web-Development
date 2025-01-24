@@ -29,7 +29,9 @@ const PORT = 3000
 
 app.use(express.json())
 app.use( morgan("tiny"))
-
+app.use(cors({
+  origin: "https://all-work-of-web-development-6az1d6mo2.vercel.app",
+}));
 app.use('/user',userRoutes)
 app.use('/task',taskRoutes)
 app.use('/auth',authRoutes)
