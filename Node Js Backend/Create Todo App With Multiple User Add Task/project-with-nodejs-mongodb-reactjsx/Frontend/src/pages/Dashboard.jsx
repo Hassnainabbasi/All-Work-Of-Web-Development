@@ -161,7 +161,8 @@ export default function Dashboard() {
       }
 
       try {
-        const response = await fetch('https://api-l2lowp11l-hassnains-projects-2fb55efa.vercel.app/api', {
+        const response = await fetch("https://api-l2lowp11l-hassnains-projects-2fb55efa.vercel.app/api", {
+  mode: "no-cors",
           method: 'GET',
           headers: {
             Authorization: `Bearer ${token}`,
