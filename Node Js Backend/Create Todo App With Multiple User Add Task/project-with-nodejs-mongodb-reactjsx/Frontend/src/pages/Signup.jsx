@@ -13,8 +13,9 @@ export default function Signup() {
     const userRegisterdata = {username , email,password}
 
     try {
-        let response = await fetch('https://api-l2lowp11l-hassnains-projects-2fb55efa.vercel.app/api',{
-            method : "POST",
+        let response = await fetch("https://api-l2lowp11l-hassnains-projects-2fb55efa.vercel.app/api", {
+  mode: "no-cors",
+     method : "POST",
              headers: {
                 'Content-Type': 'application/json',
             },
